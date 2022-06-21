@@ -1,9 +1,8 @@
 :root {
-  --main-font: 'IBM Plex Sans', sans-serif;
+  --main-font: 'DM Sans', sans-serif;
 }
 
-html,
-body {
+html, body {
   margin: 0px;
 }
 
@@ -11,6 +10,10 @@ h1 {
   margin: 0px;
   font-family: var(--main-font);
   font-size: 3em;
+}
+
+.sign-in-text {
+  margin-bottom: 12px;
 }
 
 /*Container that surrounds entire web page*/
@@ -33,6 +36,7 @@ h1 {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
 
@@ -42,7 +46,7 @@ h1 {
 
   /* Card Outline with Box Shadow */
   border-radius: 12px;
-  min-width: 30%;
+  min-width: 20%;
   min-height: 20%;
   box-shadow: 0px 0px 31px 6px rgba(0, 0, 0, 0.58);
   background-color: #ffffff;
@@ -51,14 +55,14 @@ h1 {
 
 /*Forms for Username, Password, and Submit Button*/
 form {
-  min-width: 40%;
+  /* min-width: 40%; */
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px 10px;
-  margin: 20px 30px 30px 20px;
+  margin: 30px 20px 30px 20px;
 
   /* border: 1px solid green; */
 }
@@ -77,11 +81,12 @@ input[type=password] {
 }
 
 input[type=submit] {
-  padding: 0.3em;
-  width: 50%;
+  width: 100%;
   height: 30px;
+  margin-top: 15px;
+  padding: 0.3em;
   border: 0;
-  border-radius: 4px;
+  border-radius: 20px;
   background-color: rgb(40, 40, 194);
   color: rgb(255, 255, 255)
 }
